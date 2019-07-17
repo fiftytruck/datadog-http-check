@@ -1,8 +1,8 @@
 .PHONY: build run clean
 
 build:
-	virtualenv venv
-	venv/bin/pip install -e .
+	python3 -m venv ./venv/
+	venv/bin/pip3 install -e .
 
 clean:
 	@rm -rf venv
